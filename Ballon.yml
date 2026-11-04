@@ -1,0 +1,152 @@
+
+title: 'Electronics Pre-Test Checklist'
+description: 'Verify microcontrollers, SD cards, sensors and communications before a test.'
+version: '1'
+
+pages:
+  - title: '1. Test Information'
+    tasks:
+      - linuxfabrik.clf.text_input:
+          label: 'Operator'
+          required: true
+        fact_name: 'operator'
+
+      - linuxfabrik.clf.markdown:
+          content: |
+            **Purpose:** Verify you can launch
+
+  - title: 'Visual Inspection and Power'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'All circuit boards inspected for damage'
+            - label: 'Connectors and cables seated correctly'
+            - label: 'No loose wires or exposed conductors'
+            - label: 'Battery connected correctly'
+          required: true
+
+      - linuxfabrik.clf.text_input:
+          label: 'Power-up observations'
+          required: true
+        fact_name: 'power_observations'
+
+  - title: 'T-Beam Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+            - label: 'Battery charged and installed'
+            - label: 'T-beam is ON'
+            - label: 'Watchdog or fault status checked, if applicable'
+          required: true
+
+
+  - title: 'Cientific System Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+            - label: 'Connected to Power Supply'
+            - label: 'Microcontroller is ON'
+            - label: 'Watchdog or fault status checked, if applicable'
+          required: true
+
+  - title: 'Ambient System Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+            - label: 'Connected to Power Supply'
+            - label: 'Microcontroller is ON'
+            - label: 'Watchdog or fault status checked, if applicable'
+          required: true
+
+  - title: 'Raspberry Pi Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed 1'
+            - label: 'SD installed 2'
+            - label: 'Connected to Power Supply 1'
+            - label: 'Connected to Power Supply 2'
+            - label: 'Microcontroller is ON 1'
+            - label: 'Microcontroller is ON 2'
+            - label: 'Watchdog or fault status checked, if applicable 1'
+            - label: 'Watchdog or fault status checked, if applicable 2'
+          required: true
+
+
+  - title: 'GPS Locater'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'GPS Locater is ON'
+            - label: 'GPS Locater is transmitting'
+            - label: 'Sent data is coherent'
+          required: true
+
+
+  - title: 'Telemetry'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Receiving data by LoRa'
+            - label: 'Data is being sent to server'
+            - label: 'Site is receiving data correctly'
+            - label: 'Sent data is coherent'
+            - label: 'No unexpected communication errors'
+          required: true
+
+      - linuxfabrik.clf.text_input:
+          label: 'Signal strenght and signal to noise value'
+          required: true
+        fact_name: 'communication_interface'
+
+
+  - title: 'Final Payload Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'All electronics have SD cards'
+            - label: 'All electronics are ON'
+            - label: 'Receiving telemetry'
+          required: true
+      - linuxfabrik.clf.markdown:
+          content: |
+            Close and seal Payload
+
+  - title: 'Ballon'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Ballon is filled with helium to the right amount'
+            - label: 'Ballon is correctly sealed'
+            - label: 'Ballon is correclty straped to main line'
+          required: true
+
+  - title: 'Final Hardware/Software Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Payload is correclty sealed'
+            - label: 'All the lines are clearly layed out on the ground'
+            - label: 'All the lines are intact with no partial or total tears'            
+            - label: 'Ballon is correclty straped to main line'
+            - label: 'Parachute is correctly tied to main line'
+            - label: 'Payload is correctly tied to main line'
+            - label: 'All knots are strong, pretensioned, and dressed'
+            - label: 'Received Telemetry is good'
+          required: true
+
+  - title: 'Final Review'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Authorization to launch from all competent authorities'
+            - label: 'Final GO / NO GO from everyone'
+          required: true          
+
+      - linuxfabrik.clf.markdown:
+          content: |
+            **Important:** Completion of this checklist confirms only that
+            you are ready to f***ing launch.

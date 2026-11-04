@@ -1,0 +1,264 @@
+title: 'Electronics Pre-Test Checklist'
+pages:
+  - title: '1. Test Information'
+    tasks:
+      - linuxfabrik.clf.text_input:
+          label: 'Operator'
+          required: true
+        fact_name: 'operator'
+        value: Samuel
+      - linuxfabrik.clf.markdown:
+          content: |
+            **Purpose:** Verify that the electronics are operational and that
+            data can be stored and retrieved, and telemtry is working.
+
+            Complete all checks applicable to this hardware configuration.
+            Record any failed check in the notes before continuing.
+
+  - title: 'Visual Inspection and Power'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'All circuit boards inspected for damage'
+              value: ca0092dd03ef4d919feae037b24df2a2
+            - label: 'Connectors and cables seated correctly'
+              value: 40c5170cfe27463f9ea382b156f48160
+            - label: 'No loose wires or exposed conductors'
+              value: e443a06da53b40589135f4fe63601c86
+            - label: 'Battery connected correctly'
+              value: 94f49eca61d0413d82ff07d257750073
+          required: true
+
+        fact_name: auto_c27522bd7094417a92eb769cddf53744
+        value:
+          - ca0092dd03ef4d919feae037b24df2a2
+          - 40c5170cfe27463f9ea382b156f48160
+          - e443a06da53b40589135f4fe63601c86
+          - 94f49eca61d0413d82ff07d257750073
+      - linuxfabrik.clf.text_input:
+          label: 'Power-up observations'
+          required: true
+        fact_name: 'power_observations'
+        value: none
+  - title: 'T-Beam Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+              value: 3f602e1095c249bdbf62160c88a9abd9
+            - label: 'Battery charged and installed'
+              value: 7c5c7153bdff4df0b215cd4fbd94f712
+            - label: 'T-beam is ON'
+              value: 2b3d09cd077e4602ac5c4cbdafde3ce1
+            - label: 'Watchdog or fault status checked, if applicable'
+              value: 18079885724947d38b6436db73307b2e
+          required: true
+
+
+        fact_name: auto_0fc6e948c39447d38fdc613baa99529c
+        value:
+          - 3f602e1095c249bdbf62160c88a9abd9
+          - 7c5c7153bdff4df0b215cd4fbd94f712
+          - 2b3d09cd077e4602ac5c4cbdafde3ce1
+          - 18079885724947d38b6436db73307b2e
+  - title: 'Cientific System Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+              value: 459e8d0b43d24491869b72ad7dbcb252
+            - label: 'Connected to Power Supply'
+              value: d4d6051ebe8c445c8a8a0200692ad29b
+            - label: 'Microcontroller is ON'
+              value: 2d38ffed9dfe48109753bf599b920be8
+            - label: 'Watchdog or fault status checked, if applicable'
+              value: 8bb8046008f24e1ebd765f49d4fd5c21
+          required: true
+
+        fact_name: auto_611123e87bbb44e6b6d69505b369b339
+        value:
+          - 459e8d0b43d24491869b72ad7dbcb252
+          - d4d6051ebe8c445c8a8a0200692ad29b
+          - 2d38ffed9dfe48109753bf599b920be8
+          - 8bb8046008f24e1ebd765f49d4fd5c21
+  - title: 'Ambient System Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed'
+              value: 3cc63374d889415a93598b30c650923d
+            - label: 'Connected to Power Supply'
+              value: 0e62cc9f09aa4ea2b82f2653584fabd5
+            - label: 'Microcontroller is ON'
+              value: c9d96eb3835b4ac89e2615b4a0581e95
+            - label: 'Watchdog or fault status checked, if applicable'
+              value: 3e6bcff3000a46c1801d9ff488c4df77
+          required: true
+
+        fact_name: auto_28d26e0695184faaaefa85fdc970fa32
+        value:
+          - 3cc63374d889415a93598b30c650923d
+          - 0e62cc9f09aa4ea2b82f2653584fabd5
+          - c9d96eb3835b4ac89e2615b4a0581e95
+          - 3e6bcff3000a46c1801d9ff488c4df77
+  - title: 'Raspberry Pi Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'SD installed 1'
+              value: 938bac8abb4f45749667a2af0cd2ec5a
+            - label: 'SD installed 2'
+              value: e6a2c01ec1134828b2a359020e4a7b34
+            - label: 'Connected to Power Supply 1'
+              value: 510610545f954af1b2e591321fc8b265
+            - label: 'Connected to Power Supply 2'
+              value: 4028955431ad4564b207236fb5ed3a6b
+            - label: 'Microcontroller is ON 1'
+              value: f1c436b8be2d492a95af35e05bba4d71
+            - label: 'Microcontroller is ON 2'
+              value: 7a8e741f29264b0f9a4fc350b2dfd9e9
+            - label: 'Watchdog or fault status checked, if applicable 1'
+              value: c961e756a2444646ac7aa1847ad21b6d
+            - label: 'Watchdog or fault status checked, if applicable 2'
+              value: d90b5eaa38ca4ba0b01fedae6917d4fa
+          required: true
+
+
+        fact_name: auto_fac79febf9fa41079faff82c728478b4
+        value:
+          - 938bac8abb4f45749667a2af0cd2ec5a
+          - e6a2c01ec1134828b2a359020e4a7b34
+          - 510610545f954af1b2e591321fc8b265
+          - 4028955431ad4564b207236fb5ed3a6b
+          - f1c436b8be2d492a95af35e05bba4d71
+          - 7a8e741f29264b0f9a4fc350b2dfd9e9
+          - c961e756a2444646ac7aa1847ad21b6d
+          - d90b5eaa38ca4ba0b01fedae6917d4fa
+  - title: 'GPS Locater'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'GPS Locater is ON'
+              value: 43573c910b4b48e59dc6fb0bbb780574
+            - label: 'GPS Locater is transmitting'
+              value: cc57dd138b6a40a3b729545a8410b00e
+            - label: 'Sent data is coherent'
+              value: 9ae1e5def9b24d0fbc467cb049dbd1e7
+          required: true
+
+
+        fact_name: auto_a2fe78e7821c40789d5aca58a199b27b
+        value:
+          - 43573c910b4b48e59dc6fb0bbb780574
+          - cc57dd138b6a40a3b729545a8410b00e
+          - 9ae1e5def9b24d0fbc467cb049dbd1e7
+  - title: 'Telemetry'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Receiving data by LoRa'
+              value: 56bc53c196a445438a651560db63a52a
+            - label: 'Data is being sent to server'
+              value: 04a7305a73e14e8d871d045d640a7c52
+            - label: 'Site is receiving data correctly'
+              value: 191c6fbd49b0437298095599b675a171
+            - label: 'Sent data is coherent'
+              value: 2d598762beed4244b56b21255e524691
+            - label: 'No unexpected communication errors'
+              value: f3a78cd7f4b542e99810c18d78ac6571
+          required: true
+
+        fact_name: auto_96e9bad1a3d3494fb5b3eb89b20a18db
+        value:
+          - 56bc53c196a445438a651560db63a52a
+          - 04a7305a73e14e8d871d045d640a7c52
+          - 191c6fbd49b0437298095599b675a171
+          - 2d598762beed4244b56b21255e524691
+          - f3a78cd7f4b542e99810c18d78ac6571
+      - linuxfabrik.clf.text_input:
+          label: 'Signal strenght and signal to noise value'
+          required: true
+        fact_name: 'communication_interface'
+        value: bsdhfha gp
+  - title: 'Final Payload Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'All electronics have SD cards'
+              value: 88fefc15cba344478e106539ed6ce107
+            - label: 'All electronics are ON'
+              value: 17b1a8a7f1b647999961fea8b5452547
+            - label: 'Receiving telemetry'
+              value: 21e7391fd55248ffb128dfabcaddf423
+          required: true
+        fact_name: auto_e5b6a019428e45ae8edbbc8f79823f7c
+        value:
+          - 88fefc15cba344478e106539ed6ce107
+          - 17b1a8a7f1b647999961fea8b5452547
+          - 21e7391fd55248ffb128dfabcaddf423
+      - linuxfabrik.clf.markdown:
+          content: |
+            Close and seal Payload
+
+  - title: 'Ballon'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Ballon is filled with helium to the right amount'
+              value: 43dc22d8b9144300ab5637cae04c6533
+            - label: 'Ballon is correctly sealed'
+              value: e72d758f7c2f445894ca08eb876748ba
+            - label: 'Ballon is correclty straped to main line'
+              value: 59da3fcb1c824674b39344502a68fd62
+          required: true
+
+        fact_name: auto_35caa1302ac245e8b30d64424d493b7f
+        value:
+          - 43dc22d8b9144300ab5637cae04c6533
+          - e72d758f7c2f445894ca08eb876748ba
+          - 59da3fcb1c824674b39344502a68fd62
+  - title: 'Final Hardware/Software Checks'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Payload is correclty sealed'
+              value: edc7819567db426a8931a8a4b13dbede
+            - label: 'All the lines are clearly layed out on the ground'
+              value: fb17cb93c17545b391a3c46750a490dd
+            - label: 'All the lines are intact with no partial or total tears'
+              value: ff90834fc10343e18dab1e9dfadd0ac8
+            - label: 'Ballon is correclty straped to main line'
+              value: 40609bed04f341e0aeb64ebd7dab2817
+            - label: 'Parachute is correctly tied to main line'
+              value: 38c4adf08c22470eb3febd4256b80d9d
+            - label: 'Payload is correctly tied to main line'
+              value: de4a06c9368948509d3ab3c51deaaf7f
+            - label: 'All knots are strong, pretensioned, and dressed'
+              value: e6eb2bfbe4f44a00aa7864a27d26f670
+            - label: 'Received Telemetry is good'
+              value: 947b888d5fac46c6993a6d6490dabeeb
+          required: true
+
+        fact_name: auto_41cadf149ce849e2922e63d788260acb
+        value:
+          - edc7819567db426a8931a8a4b13dbede
+          - fb17cb93c17545b391a3c46750a490dd
+          - ff90834fc10343e18dab1e9dfadd0ac8
+          - 40609bed04f341e0aeb64ebd7dab2817
+          - 38c4adf08c22470eb3febd4256b80d9d
+          - de4a06c9368948509d3ab3c51deaaf7f
+          - e6eb2bfbe4f44a00aa7864a27d26f670
+          - 947b888d5fac46c6993a6d6490dabeeb
+  - title: 'Final Review'
+    tasks:
+      - linuxfabrik.clf.checkbox_input:
+          values:
+            - label: 'Authorization to launch from all competent authorities'
+            - label: 'Final GO / NO GO from everyone'
+          required: true
+
+      - linuxfabrik.clf.markdown:
+          content: |
+            **Important:** Completion of this checklist confirms only that
+            youo are ready to f***ing launch.
+version: '1'
